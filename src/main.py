@@ -68,6 +68,10 @@ def main():
     print("Observations")
     print(f"{instrument['ticker']}: {len(instrument_prices)}")
     print(f"{benchmark['ticker']}: {len(benchmark_prices)}")
+    print("Instrument")
+    display_market_summary(instrument, instrument_prices)
+    print("Benchmark")
+    display_market_summary(benchmark, benchmark_prices, show_currency=False)
 
 
 if __name__ == "__main__":
